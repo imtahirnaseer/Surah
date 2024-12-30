@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran-Al-Furqan 25</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Scheherazade New', serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .arabic-font {
+            font-family: 'Scheherazade New', serif;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+        .urdu-font {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+        .header {
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-buttons i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: right;
+            font-size: 24px;
+            line-height: 1.6;
+            direction: rtl;
+            height: 80vh;
+            overflow-y: auto;
+        }
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #009688;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        .floating-buttons button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .floating-buttons button i {
+            margin-right: 5px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-to-top:hover {
+            background-color: #00796b;
+            transform: scale(1.1);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .mr-bottom-5 {
+            margin-bottom: 5px;
+        }
+        .padding10px {
+            padding: 10px;
+        }
+        .center-justified {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <i id="back-button" class="fas fa-arrow-left"></i>
+        <div class="title">Al-Furqan</div>
+        <div class="nav-buttons">
+            <i class="fas fa-step-backward"></i>
+            <i id="play-button" class="fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+        </div>
+    </div>
+    <div id="scroll-content" class="content">
+        <div class="mr-bottom-5">
+            <div class="text center-justified">
+                <b><p>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</p></b><br>  
+            </div>
+        </div>
+        <div class="padding10px">
+            <div class="text center-justified"><span dir="rtl">تَبٰرَكَ الَّذِیْ نَزَّلَ الْفُرْقَانَ عَلٰى عَبْدِهٖ لِیَكُوْنَ لِلْعٰلَمِیْنَ نَذِیْرَاۙ   <small><small>﴿<b><small>1</small></b>﴾</small></small>   اِ۟لَّذِیْ لَهٗ مُلْكُ السَّمٰوٰتِ وَ الْاَرْضِ وَ لَمْ یَتَّخِذْ وَلَدًا وَّ لَمْ یَكُنْ لَّهٗ شَرِیْكٌ فِی الْمُلْكِ وَ خَلَقَ كُلَّ شَیْءٍ فَقَدَّرَهٗ تَقْدِیْرًا   <small><small>﴿<b><small>2</small></b>﴾</small></small>   وَ اتَّخَذُوْا مِنْ دُوْنِهٖۤ اٰلِهَةً لَّا یَخْلُقُوْنَ شَیْئًا وَّ هُمْ یُخْلَقُوْنَ وَ لَا یَمْلِكُوْنَ لِاَنْفُسِهِمْ ضَرًّا وَّ لَا نَفْعًا وَّ لَا یَمْلِكُوْنَ مَوْتًا وَّ لَا حَیٰوةً وَّ لَا نُشُوْرًا   <small><small>﴿<b><small>3</small></b>﴾</small></small>   وَ قَالَ الَّذِیْنَ كَفَرُوْۤا اِنْ هٰذَاۤ اِلَّاۤ اِفْكُ اِ۟فْتَرٰىهُ وَ اَعَانَهٗ عَلَیْهِ قَوْمٌ اٰخَرُوْنَ١ۛۚ فَقَدْ جَآءُوْ ظُلْمًا وَّ زُوْرًاۚۛ   <small><small>﴿<b><small>4</small></b>﴾</small></small>   وَ قَالُوْۤا اَسَاطِیْرُ الْاَوَّلِیْنَ اكْتَتَبَهَا فَهِیَ تُمْلٰى عَلَیْهِ بُكْرَةً وَّ اَصِیْلًا   <small><small>﴿<b><small>5</small></b>﴾</small></small>   قُلْ اَنْزَلَهُ الَّذِیْ یَعْلَمُ السِّرَّ فِی السَّمٰوٰتِ وَ الْاَرْضِ١ؕ اِنَّهٗ كَانَ غَفُوْرًا رَّحِیْمًا   <small><small>﴿<b><small>6</small></b>﴾</small></small>   وَ قَالُوْا مَالِ هٰذَا الرَّسُوْلِ یَاْكُلُ الطَّعَامَ وَ یَمْشِیْ فِی الْاَسْوَاقِ١ؕ لَوْ لَاۤ اُنْزِلَ اِلَیْهِ مَلَكٌ فَیَكُوْنَ مَعَهٗ نَذِیْرًاۙ   <small><small>﴿<b><small>7</small></b>﴾</small></small>   اَوْ یُلْقٰۤى اِلَیْهِ كَنْزٌ اَوْ تَكُوْنُ لَهٗ جَنَّةٌ یَّاْكُلُ مِنْهَا١ؕ وَ قَالَ الظّٰلِمُوْنَ اِنْ تَتَّبِعُوْنَ اِلَّا رَجُلًا مَّسْحُوْرًا   <small><small>﴿<b><small>8</small></b>﴾</small></small>   اُنْظُرْ كَیْفَ ضَرَبُوْا لَكَ الْاَمْثَالَ فَضَلُّوْا فَلَا یَسْتَطِیْعُوْنَ سَبِیْلًا۠&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>9ع</small></small><small><small> الفرقان 25</small></small>﴾   تَبٰرَكَ الَّذِیْۤ اِنْ شَآءَ جَعَلَ لَكَ خَیْرًا مِّنْ ذٰلِكَ جَنّٰتٍ تَجْرِیْ مِنْ تَحْتِهَا الْاَنْهٰرُ١ۙ وَ یَجْعَلْ لَّكَ قُصُوْرًا   <small><small>﴿<b><small>10</small></b>﴾</small></small>   بَلْ كَذَّبُوْا بِالسَّاعَةِ١۫ وَ اَعْتَدْنَا لِمَنْ كَذَّبَ بِالسَّاعَةِ سَعِیْرًاۚ   <small><small>﴿<b><small>11</small></b>﴾</small></small>   اِذَا رَاَتْهُمْ مِّنْ مَّكَانٍۭ بَعِیْدٍ سَمِعُوْا لَهَا تَغَیُّظًا وَّ زَفِیْرًا   <small><small>﴿<b><small>12</small></b>﴾</small></small>   وَ اِذَاۤ اُلْقُوْا مِنْهَا مَكَانًا ضَیِّقًا مُّقَرَّنِیْنَ دَعَوْا هُنَالِكَ ثُبُوْرًاؕ   <small><small>﴿<b><small>13</small></b>﴾</small></small>   لَا تَدْعُوا الْیَوْمَ ثُبُوْرًا وَّاحِدًا وَّ ادْعُوْا ثُبُوْرًا كَثِیْرًا   <small><small>﴿<b><small>14</small></b>﴾</small></small>   قُلْ اَذٰلِكَ خَیْرٌ اَمْ جَنَّةُ الْخُلْدِ الَّتِیْ وُعِدَ الْمُتَّقُوْنَ١ؕ كَانَتْ لَهُمْ جَزَآءً وَّ مَصِیْرًا   <small><small>﴿<b><small>15</small></b>﴾</small></small>   لَهُمْ فِیْهَا مَا یَشَآءُوْنَ خٰلِدِیْنَ١ؕ كَانَ عَلٰى رَبِّكَ وَعْدًا مَّسْئُوْلًا   <small><small>﴿<b><small>16</small></b>﴾</small></small>   وَ یَوْمَ یَحْشُرُهُمْ وَ مَا یَعْبُدُوْنَ مِنْ دُوْنِ اللّٰهِ فَیَقُوْلُ ءَاَنْتُمْ اَضْلَلْتُمْ عِبَادِیْ هٰۤؤُلَآءِ اَمْ هُمْ ضَلُّوا السَّبِیْلَؕ   <small><small>﴿<b><small>17</small></b>﴾</small></small>   قَالُوْا سُبْحٰنَكَ مَا كَانَ یَنْۢبَغِیْ لَنَاۤ اَنْ نَّتَّخِذَ مِنْ دُوْنِكَ مِنْ اَوْلِیَآءَ وَ لٰكِنْ مَّتَّعْتَهُمْ وَ اٰبَآءَهُمْ حَتّٰى نَسُوا الذِّكْرَ١ۚ وَ كَانُوْا قَوْمًۢا بُوْرًا   <small><small>﴿<b><small>18</small></b>﴾</small></small>   فَقَدْ كَذَّبُوْكُمْ بِمَا تَقُوْلُوْنَ١ۙ فَمَا تَسْتَطِیْعُوْنَ صَرْفًا وَّ لَا نَصْرًا١ۚ وَ مَنْ یَّظْلِمْ مِّنْكُمْ نُذِقْهُ عَذَابًا كَبِیْرًا   <small><small>﴿<b><small>19</small></b>﴾</small></small>   وَ مَاۤ اَرْسَلْنَا قَبْلَكَ مِنَ الْمُرْسَلِیْنَ اِلَّاۤ اِنَّهُمْ لَیَاْكُلُوْنَ الطَّعَامَ وَ یَمْشُوْنَ فِی الْاَسْوَاقِ١ؕ وَ جَعَلْنَا بَعْضَكُمْ لِبَعْضٍ فِتْنَةً١ؕ اَتَصْبِرُوْنَ١ۚ وَ كَانَ رَبُّكَ بَصِیْرًا۠&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>20ع</small></small><small><small> الفرقان 25</small></small>﴾   وَ قَالَ الَّذِیْنَ لَا یَرْجُوْنَ لِقَآءَنَا لَوْ لَاۤ اُنْزِلَ عَلَیْنَا الْمَلٰٓئِكَةُ اَوْ نَرٰى رَبَّنَا١ؕ لَقَدِ اسْتَكْبَرُوْا فِیْۤ اَنْفُسِهِمْ وَ عَتَوْ عُتُوًّا كَبِیْرًا   <small><small>﴿<b><small>21</small></b>﴾</small></small>   یَوْمَ یَرَوْنَ الْمَلٰٓئِكَةَ لَا بُشْرٰى یَوْمَئِذٍ لِّلْمُجْرِمِیْنَ وَ یَقُوْلُوْنَ حِجْرًا مَّحْجُوْرًا   <small><small>﴿<b><small>22</small></b>﴾</small></small>   وَ قَدِمْنَاۤ اِلٰى مَا عَمِلُوْا مِنْ عَمَلٍ فَجَعَلْنٰهُ هَبَآءً مَّنْثُوْرًا   <small><small>﴿<b><small>23</small></b>﴾</small></small>   اَصْحٰبُ الْجَنَّةِ یَوْمَئِذٍ خَیْرٌ مُّسْتَقَرًّا وَّ اَحْسَنُ مَقِیْلًا   <small><small>﴿<b><small>24</small></b>﴾</small></small>   وَ یَوْمَ تَشَقَّقُ السَّمَآءُ بِالْغَمَامِ وَ نُزِّلَ الْمَلٰٓئِكَةُ تَنْزِیْلًا   <small><small>﴿<b><small>25</small></b>﴾</small></small>   اَلْمُلْكُ یَوْمَئِذِ اِ۟لْحَقُّ لِلرَّحْمٰنِ١ؕ وَ كَانَ یَوْمًا عَلَى الْكٰفِرِیْنَ عَسِیْرًا   <small><small>﴿<b><small>26</small></b>﴾</small></small>   وَ یَوْمَ یَعَضُّ الظَّالِمُ عَلٰى یَدَیْهِ یَقُوْلُ یٰلَیْتَنِی اتَّخَذْتُ مَعَ الرَّسُوْلِ سَبِیْلًا   <small><small>﴿<b><small>27</small></b>﴾</small></small>   یٰوَیْلَتٰى لَیْتَنِیْ لَمْ اَتَّخِذْ فُلَانًا خَلِیْلًا   <small><small>﴿<b><small>28</small></b>﴾</small></small>   لَقَدْ اَضَلَّنِیْ عَنِ الذِّكْرِ بَعْدَ اِذْ جَآءَنِیْ١ؕ وَ كَانَ الشَّیْطٰنُ لِلْاِنْسَانِ خَذُوْلًا   <small><small>﴿<b><small>29</small></b>﴾</small></small>   وَ قَالَ الرَّسُوْلُ یٰرَبِّ اِنَّ قَوْمِی اتَّخَذُوْا هٰذَا الْقُرْاٰنَ مَهْجُوْرًا   <small><small>﴿<b><small>30</small></b>﴾</small></small>   وَ كَذٰلِكَ جَعَلْنَا لِكُلِّ نَبِیٍّ عَدُوًّا مِّنَ الْمُجْرِمِیْنَ١ؕ وَ كَفٰى بِرَبِّكَ هَادِیًا وَّ نَصِیْرًا   <small><small>﴿<b><small>31</small></b>﴾</small></small>   وَ قَالَ الَّذِیْنَ كَفَرُوْا لَوْ لَا نُزِّلَ عَلَیْهِ الْقُرْاٰنُ جُمْلَةً وَّاحِدَةً١ۛۚ كَذٰلِكَ١ۛۚ لِنُثَبِّتَ بِهٖ فُؤَادَكَ وَ رَتَّلْنٰهُ تَرْتِیْلًا   <small><small>﴿<b><small>32</small></b>﴾</small></small>   وَ لَا یَاْتُوْنَكَ بِمَثَلٍ اِلَّا جِئْنٰكَ بِالْحَقِّ وَ اَحْسَنَ تَفْسِیْرًاؕ   <small><small>﴿<b><small>33</small></b>﴾</small></small>   اَلَّذِیْنَ یُحْشَرُوْنَ عَلٰى وُجُوْهِهِمْ اِلٰى جَهَنَّمَ١ۙ اُولٰٓئِكَ شَرٌّ مَّكَانًا وَّ اَضَلُّ سَبِیْلًا۠&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>34ع</small></small><small><small> الفرقان 25</small></small>﴾   وَ لَقَدْ اٰتَیْنَا مُوْسَى الْكِتٰبَ وَ جَعَلْنَا مَعَهٗۤ اَخَاهُ هٰرُوْنَ وَزِیْرًاۚۖ   <small><small>﴿<b><small>35</small></b>﴾</small></small>   فَقُلْنَا اذْهَبَاۤ اِلَى الْقَوْمِ الَّذِیْنَ كَذَّبُوْا بِاٰیٰتِنَا١ؕ فَدَمَّرْنٰهُمْ تَدْمِیْرًاؕ   <small><small>﴿<b><small>36</small></b>﴾</small></small>   وَ قَوْمَ نُوْحٍ لَّمَّا كَذَّبُوا الرُّسُلَ اَغْرَقْنٰهُمْ وَ جَعَلْنٰهُمْ لِلنَّاسِ اٰیَةً١ؕ وَ اَعْتَدْنَا لِلظّٰلِمِیْنَ عَذَابًا اَلِیْمًاۚۖ   <small><small>﴿<b><small>37</small></b>﴾</small></small>   وَّ عَادًا وَّ ثَمُوْدَاۡ وَ اَصْحٰبَ الرَّسِّ وَ قُرُوْنًۢا بَیْنَ ذٰلِكَ كَثِیْرًا   <small><small>﴿<b><small>38</small></b>﴾</small></small>   وَ كُلًّا ضَرَبْنَا لَهُ الْاَمْثَالَ١٘ وَ كُلًّا تَبَّرْنَا تَتْبِیْرًا   <small><small>﴿<b><small>39</small></b>﴾</small></small>   وَ لَقَدْ اَتَوْا عَلَى الْقَرْیَةِ الَّتِیْۤ اُمْطِرَتْ مَطَرَ السَّوْءِ١ؕ اَفَلَمْ یَكُوْنُوْا یَرَوْنَهَا١ۚ بَلْ كَانُوْا لَا یَرْجُوْنَ نُشُوْرًا   <small><small>﴿<b><small>40</small></b>﴾</small></small>   وَ اِذَا رَاَوْكَ اِنْ یَّتَّخِذُوْنَكَ اِلَّا هُزُوًا١ؕ اَهٰذَا الَّذِیْ بَعَثَ اللّٰهُ رَسُوْلًا   <small><small>﴿<b><small>41</small></b>﴾</small></small>   اِنْ كَادَ لَیُضِلُّنَا عَنْ اٰلِهَتِنَا لَوْ لَاۤ اَنْ صَبَرْنَا عَلَیْهَا١ؕ وَ سَوْفَ یَعْلَمُوْنَ حِیْنَ یَرَوْنَ الْعَذَابَ مَنْ اَضَلُّ سَبِیْلًا   <small><small>﴿<b><small>42</small></b>﴾</small></small>   اَرَءَیْتَ مَنِ اتَّخَذَ اِلٰهَهٗ هَوٰىهُ١ؕ اَفَاَنْتَ تَكُوْنُ عَلَیْهِ وَكِیْلًاۙ   <small><small>﴿<b><small>43</small></b>﴾</small></small>   اَمْ تَحْسَبُ اَنَّ اَكْثَرَهُمْ یَسْمَعُوْنَ اَوْ یَعْقِلُوْنَ١ؕ اِنْ هُمْ اِلَّا كَالْاَنْعَامِ بَلْ هُمْ اَضَلُّ سَبِیْلًا۠&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>44ع</small></small><small><small> الفرقان 25</small></small>﴾   اَلَمْ تَرَ اِلٰى رَبِّكَ كَیْفَ مَدَّ الظِّلَّ١ۚ وَ لَوْ شَآءَ لَجَعَلَهٗ سَاكِنًا١ۚ ثُمَّ جَعَلْنَا الشَّمْسَ عَلَیْهِ دَلِیْلًاۙ   <small><small>﴿<b><small>45</small></b>﴾</small></small>   ثُمَّ قَبَضْنٰهُ اِلَیْنَا قَبْضًا یَّسِیْرًا   <small><small>﴿<b><small>46</small></b>﴾</small></small>   وَ هُوَ الَّذِیْ جَعَلَ لَكُمُ الَّیْلَ لِبَاسًا وَّ النَّوْمَ سُبَاتًا وَّ جَعَلَ النَّهَارَ نُشُوْرًا   <small><small>﴿<b><small>47</small></b>﴾</small></small>   وَ هُوَ الَّذِیْۤ اَرْسَلَ الرِّیٰحَ بُشْرًۢا بَیْنَ یَدَیْ رَحْمَتِهٖ١ۚ وَ اَنْزَلْنَا مِنَ السَّمَآءِ مَآءً طَهُوْرًاۙ   <small><small>﴿<b><small>48</small></b>﴾</small></small>   لِّنُحْیَِۧ بِهٖ بَلْدَةً مَّیْتًا وَّ نُسْقِیَهٗ مِمَّا خَلَقْنَاۤ اَنْعَامًا وَّ اَنَاسِیَّ كَثِیْرًا   <small><small>﴿<b><small>49</small></b>﴾</small></small>   وَ لَقَدْ صَرَّفْنٰهُ بَیْنَهُمْ لِیَذَّكَّرُوْا١ۖ٘ فَاَبٰۤى اَكْثَرُ النَّاسِ اِلَّا كُفُوْرًا   <small><small>﴿<b><small>50</small></b>﴾</small></small>   وَ لَوْ شِئْنَا لَبَعَثْنَا فِیْ كُلِّ قَرْیَةٍ نَّذِیْرًا٘ۖ   <small><small>﴿<b><small>51</small></b>﴾</small></small>   فَلَا تُطِعِ الْكٰفِرِیْنَ وَ جَاهِدْهُمْ بِهٖ جِهَادًا كَبِیْرًا   <small><small>﴿<b><small>52</small></b>﴾</small></small>   وَ هُوَ الَّذِیْ مَرَجَ الْبَحْرَیْنِ هٰذَا عَذْبٌ فُرَاتٌ وَّ هٰذَا مِلْحٌ اُجَاجٌ١ۚ وَ جَعَلَ بَیْنَهُمَا بَرْزَخًا وَّ حِجْرًا مَّحْجُوْرًا   <small><small>﴿<b><small>53</small></b>﴾</small></small>   وَ هُوَ الَّذِیْ خَلَقَ مِنَ الْمَآءِ بَشَرًا فَجَعَلَهٗ نَسَبًا وَّ صِهْرًا١ؕ وَ كَانَ رَبُّكَ قَدِیْرًا   <small><small>﴿<b><small>54</small></b>﴾</small></small>   وَ یَعْبُدُوْنَ مِنْ دُوْنِ اللّٰهِ مَا لَا یَنْفَعُهُمْ وَ لَا یَضُرُّهُمْ١ؕ وَ كَانَ الْكَافِرُ عَلٰى رَبِّهٖ ظَهِیْرًا   <small><small>﴿<b><small>55</small></b>﴾</small></small>   وَ مَاۤ اَرْسَلْنٰكَ اِلَّا مُبَشِّرًا وَّ نَذِیْرًا   <small><small>﴿<b><small>56</small></b>﴾</small></small>   قُلْ مَاۤ اَسْئَلُكُمْ عَلَیْهِ مِنْ اَجْرٍ اِلَّا مَنْ شَآءَ اَنْ یَّتَّخِذَ اِلٰى رَبِّهٖ سَبِیْلًا   <small><small>﴿<b><small>57</small></b>﴾</small></small>   وَ تَوَكَّلْ عَلَى الْحَیِّ الَّذِیْ لَا یَمُوْتُ وَ سَبِّحْ بِحَمْدِهٖ١ؕ وَ كَفٰى بِهٖ بِذُنُوْبِ عِبَادِهٖ خَبِیْرَا٤ۚۛۙ   <small><small>﴿<b><small>58</small></b>﴾</small></small>   اِ۟لَّذِیْ خَلَقَ السَّمٰوٰتِ وَ الْاَرْضَ وَ مَا بَیْنَهُمَا فِیْ سِتَّةِ اَیَّامٍ ثُمَّ اسْتَوٰى عَلَى الْعَرْشِ١ۛۚ اَلرَّحْمٰنُ فَسْئَلْ بِهٖ خَبِیْرًا   <small><small>﴿<b><small>59</small></b>﴾</small></small>   وَ اِذَا قِیْلَ لَهُمُ اسْجُدُوْا لِلرَّحْمٰنِ قَالُوْا وَ مَا الرَّحْمٰنُ١ۗ اَنَسْجُدُ لِمَا تَاْمُرُنَا وَ زَادَهُمْ نُفُوْرًا۠۩&nbsp;&nbsp;۞&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>60ع</small></small><small><small> الفرقان 25</small></small>﴾   تَبٰرَكَ الَّذِیْ جَعَلَ فِی السَّمَآءِ بُرُوْجًا وَّ جَعَلَ فِیْهَا سِرٰجًا وَّ قَمَرًا مُّنِیْرًا   <small><small>﴿<b><small>61</small></b>﴾</small></small>   وَ هُوَ الَّذِیْ جَعَلَ الَّیْلَ وَ النَّهَارَ خِلْفَةً لِّمَنْ اَرَادَ اَنْ یَّذَّكَّرَ اَوْ اَرَادَ شُكُوْرًا   <small><small>﴿<b><small>62</small></b>﴾</small></small>   وَ عِبَادُ الرَّحْمٰنِ الَّذِیْنَ یَمْشُوْنَ عَلَى الْاَرْضِ هَوْنًا وَّ اِذَا خَاطَبَهُمُ الْجٰهِلُوْنَ قَالُوْا سَلٰمًا   <small><small>﴿<b><small>63</small></b>﴾</small></small>   وَ الَّذِیْنَ یَبِیْتُوْنَ لِرَبِّهِمْ سُجَّدًا وَّ قِیَامًا   <small><small>﴿<b><small>64</small></b>﴾</small></small>   وَ الَّذِیْنَ یَقُوْلُوْنَ رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ١ۖۗ اِنَّ عَذَابَهَا كَانَ غَرَامًاۗۖ   <small><small>﴿<b><small>65</small></b>﴾</small></small>   اِنَّهَا سَآءَتْ مُسْتَقَرًّا وَّ مُقَامًا   <small><small>﴿<b><small>66</small></b>﴾</small></small>   وَ الَّذِیْنَ اِذَاۤ اَنْفَقُوْا لَمْ یُسْرِفُوْا وَ لَمْ یَقْتُرُوْا وَ كَانَ بَیْنَ ذٰلِكَ قَوَامًا   <small><small>﴿<b><small>67</small></b>﴾</small></small>   وَ الَّذِیْنَ لَا یَدْعُوْنَ مَعَ اللّٰهِ اِلٰهًا اٰخَرَ وَ لَا یَقْتُلُوْنَ النَّفْسَ الَّتِیْ حَرَّمَ اللّٰهُ اِلَّا بِالْحَقِّ وَ لَا یَزْنُوْنَ١ۚ وَ مَنْ یَّفْعَلْ ذٰلِكَ یَلْقَ اَثَامًاۙ   <small><small>﴿<b><small>68</small></b>﴾</small></small>   یُّضٰعَفْ لَهُ الْعَذَابُ یَوْمَ الْقِیٰمَةِ وَ یَخْلُدْ فِیْهٖ مُهَانًاۗۖ   <small><small>﴿<b><small>69</small></b>﴾</small></small>   اِلَّا مَنْ تَابَ وَ اٰمَنَ وَ عَمِلَ عَمَلًا صَالِحًا فَاُولٰٓئِكَ یُبَدِّلُ اللّٰهُ سَیِّاٰتِهِمْ حَسَنٰتٍ١ؕ وَ كَانَ اللّٰهُ غَفُوْرًا رَّحِیْمًا   <small><small>﴿<b><small>70</small></b>﴾</small></small>   وَ مَنْ تَابَ وَ عَمِلَ صَالِحًا فَاِنَّهٗ یَتُوْبُ اِلَى اللّٰهِ مَتَابًا   <small><small>﴿<b><small>71</small></b>﴾</small></small>   وَ الَّذِیْنَ لَا یَشْهَدُوْنَ الزُّوْرَ١ۙ وَ اِذَا مَرُّوْا بِاللَّغْوِ مَرُّوْا كِرَامًا   <small><small>﴿<b><small>72</small></b>﴾</small></small>   وَ الَّذِیْنَ اِذَا ذُكِّرُوْا بِاٰیٰتِ رَبِّهِمْ لَمْ یَخِرُّوْا عَلَیْهَا صُمًّا وَّ عُمْیَانًا   <small><small>﴿<b><small>73</small></b>﴾</small></small>   وَ الَّذِیْنَ یَقُوْلُوْنَ رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا وَ ذُرِّیّٰتِنَا قُرَّةَ اَعْیُنٍ وَّ اجْعَلْنَا لِلْمُتَّقِیْنَ اِمَامًا   <small><small>﴿<b><small>74</small></b>﴾</small></small>   اُولٰٓئِكَ یُجْزَوْنَ الْغُرْفَةَ بِمَا صَبَرُوْا وَ یُلَقَّوْنَ فِیْهَا تَحِیَّةً وَّ سَلٰمًاۙ   <small><small>﴿<b><small>75</small></b>﴾</small></small>   خٰلِدِیْنَ فِیْهَا١ؕ حَسُنَتْ مُسْتَقَرًّا وَّ مُقَامًا   <small><small>﴿<b><small>76</small></b>﴾</small></small>   قُلْ مَا یَعْبَؤُا بِكُمْ رَبِّیْ لَوْ لَا دُعَآؤُكُمْ١ۚ فَقَدْ كَذَّبْتُمْ فَسَوْفَ یَكُوْنُ لِزَامًا۠&nbsp;&nbsp;  ۧ  ۧ   <small>﴿<small>77ع</small></small><small><small> الفرقان 25</small></small>﴾   </span>
+            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+   <div class="floating-buttons">
+        <button id="decrease-speed"><i class="fas fa-minus"></i></button>
+        <button id="auto-scroll"><i class="fas fa-play"></i> AUTO SCROLL</button>
+        <button id="increase-speed"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="popup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>We are continuously working on this feature. It will start working very soon.</p>
+        </div>
+    </div>
+
+    <script>
+        let scrollSpeed = 0;
+        let scrollInterval;
+        const scrollContent = document.getElementById('scroll-content');
+        const autoScrollButton = document.getElementById('auto-scroll');
+        const decreaseSpeedButton = document.getElementById('decrease-speed');
+        const increaseSpeedButton = document.getElementById('increase-speed');
+        const backButton = document.getElementById('back-button');
+        const playButton = document.getElementById('play-button');
+        const popup = document.getElementById('popup');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        function startScrolling() {
+            if (scrollInterval) clearInterval(scrollInterval);
+            scrollInterval = setInterval(() => {
+                scrollContent.scrollBy(0, scrollSpeed);
+            }, 100);
+        }
+
+        autoScrollButton.addEventListener('click', () => {
+            if (scrollSpeed === 0) {
+                scrollSpeed = 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            } else {
+                scrollSpeed = 0;
+                autoScrollButton.innerHTML = `<i class="fas fa-play"></i> AUTO SCROLL`;
+                clearInterval(scrollInterval);
+            }
+        });
+
+        decreaseSpeedButton.addEventListener('click', () => {
+            if (scrollSpeed > -5) {
+                scrollSpeed -= 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            }
+        });
+
+        increaseSpeedButton.addEventListener('click', () => {
+            if (scrollSpeed < 5) {
+                scrollSpeed += 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            }
+        });
+
+        backButton.addEventListener('click', () => {
+            window.history.back(); // Navigate to the previous page
+        });
+
+        playButton.addEventListener('click', () => {
+            popup.style.display = 'block'; // Show the popup
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            scrollContent.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        function closePopup() {
+            popup.style.display = 'none'; // Close the popup
+        }
+
+        window.onclick = function (event) {
+            if (event.target === popup) {
+                closePopup();
+            }
+        };
+    </script>
+</body>
+</html>

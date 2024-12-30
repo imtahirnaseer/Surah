@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran-Al-Muminun 23</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Scheherazade New', serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .arabic-font {
+            font-family: 'Scheherazade New', serif;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+        .urdu-font {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+        .header {
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .nav-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-buttons i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: right;
+            font-size: 24px;
+            line-height: 1.6;
+            direction: rtl;
+            height: 80vh;
+            overflow-y: auto;
+        }
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #009688;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        .floating-buttons button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .floating-buttons button i {
+            margin-right: 5px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-to-top:hover {
+            background-color: #00796b;
+            transform: scale(1.1);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .mr-bottom-5 {
+            margin-bottom: 5px;
+        }
+        .padding10px {
+            padding: 10px;
+        }
+        .center-justified {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <i id="back-button" class="fas fa-arrow-left"></i>
+        <div class="title">Al-Muminun</div>
+        <div class="nav-buttons">
+            <i class="fas fa-step-backward"></i>
+            <i id="play-button" class="fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+        </div>
+    </div>
+    <div id="scroll-content" class="content">
+        <div class="mr-bottom-5">
+            <div class="text center-justified">
+                <b><p>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</p></b><br>  
+            </div>
+        </div>
+        <div class="padding10px">
+            <div class="text center-justified">
+                <span dir="rtl">
+                    قَدْ اَفْلَحَ الْمُؤْمِنُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>1</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    الَّذِیْنَ هُمْ فِیْ صَلَاتِهِمْ خٰشِعُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>2</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ عَنِ اللَّغْوِ مُعْرِضُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>3</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ لِلزَّكٰوةِ فٰعِلُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>4</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ لِفُرُوْجِهِمْ حٰفِظُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>5</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِلَّا عَلٰۤى اَزْوَاجِهِمْ اَوْ مَا مَلَكَتْ اَیْمَانُهُمْ فَاِنَّهُمْ غَیْرُ مَلُوْمِیْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>6</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَمَنِ ابْتَغٰى وَرَآءَ ذٰلِكَ فَاُولٰٓئِكَ هُمُ الْعٰدُوْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>7</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ لِاَمٰنٰتِهِمْ وَ عَهْدِهِمْ رٰعُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>8</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ عَلٰى صَلَوٰتِهِمْ یُحَافِظُوْنَۘ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>9</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اُولٰٓئِكَ هُمُ الْوٰرِثُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>10</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    الَّذِیْنَ یَرِثُوْنَ الْفِرْدَوْسَ١ؕ هُمْ فِیْهَا خٰلِدُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>11</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَقَدْ خَلَقْنَا الْاِنْسَانَ مِنْ سُلٰلَةٍ مِّنْ طِیْنٍۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>12</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ جَعَلْنٰهُ نُطْفَةً فِیْ قَرَارٍ مَّكِیْنٍ۪   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>13</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ خَلَقْنَا النُّطْفَةَ عَلَقَةً فَخَلَقْنَا الْعَلَقَةَ مُضْغَةً فَخَلَقْنَا الْمُضْغَةَ عِظٰمًا فَكَسَوْنَا الْعِظٰمَ لَحْمًا١ۗ ثُمَّ اَنْشَاْنٰهُ خَلْقًا اٰخَرَ١ؕ فَتَبٰرَكَ اللّٰهُ اَحْسَنُ الْخٰلِقِیْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>14</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اِنَّكُمْ بَعْدَ ذٰلِكَ لَمَیِّتُوْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>15</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اِنَّكُمْ یَوْمَ الْقِیٰمَةِ تُبْعَثُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>16</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَقَدْ خَلَقْنَا فَوْقَكُمْ سَبْعَ طَرَآئِقَ١ۖۗ وَ مَا كُنَّا عَنِ الْخَلْقِ غٰفِلِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>17</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اَنْزَلْنَا مِنَ السَّمَآءِ مَآءًۢ بِقَدَرٍ فَاَسْكَنّٰهُ فِی الْاَرْضِ١ۖۗ وَ اِنَّا عَلٰى ذَهَابٍۭ بِهٖ لَقٰدِرُوْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>18</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاَنْشَاْنَا لَكُمْ بِهٖ جَنّٰتٍ مِّنْ نَّخِیْلٍ وَّ اَعْنَابٍ١ۘ لَكُمْ فِیْهَا فَوَاكِهُ كَثِیْرَةٌ وَّ مِنْهَا تَاْكُلُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>19</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ شَجَرَةً تَخْرُجُ مِنْ طُوْرِ سَیْنَآءَ تَنْۢبُتُ بِالدُّهْنِ وَ صِبْغٍ لِّلْاٰكِلِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>20</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اِنَّ لَكُمْ فِی الْاَنْعَامِ لَعِبْرَةً١ؕ نُسْقِیْكُمْ مِّمَّا فِیْ بُطُوْنِهَا وَ لَكُمْ فِیْهَا مَنَافِعُ كَثِیْرَةٌ وَّ مِنْهَا تَاْكُلُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>21</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ عَلَیْهَا وَ عَلَى الْفُلْكِ تُحْمَلُوْنَ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>22ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   وَ لَقَدْ اَرْسَلْنَا نُوْحًا اِلٰى قَوْمِهٖ فَقَالَ یٰقَوْمِ اعْبُدُوا اللّٰهَ مَا لَكُمْ مِّنْ اِلٰهٍ غَیْرُهٗ١ؕ اَفَلَا تَتَّقُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>23</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَقَالَ الْمَلَؤُا الَّذِیْنَ كَفَرُوْا مِنْ قَوْمِهٖ مَا هٰذَاۤ اِلَّا بَشَرٌ مِّثْلُكُمْ١ۙ یُرِیْدُ اَنْ یَّتَفَضَّلَ عَلَیْكُمْ١ؕ وَ لَوْ شَآءَ اللّٰهُ لَاَنْزَلَ مَلٰٓئِكَةً١ۖۚ مَّا سَمِعْنَا بِهٰذَا فِیْۤ اٰبَآئِنَا الْاَوَّلِیْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>24</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنْ هُوَ اِلَّا رَجُلٌۢ بِهٖ جِنَّةٌ فَتَرَبَّصُوْا بِهٖ حَتّٰى حِیْنٍ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>25</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالَ رَبِّ انْصُرْنِیْ بِمَا كَذَّبُوْنِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>26</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاَوْحَیْنَاۤ اِلَیْهِ اَنِ اصْنَعِ الْفُلْكَ بِاَعْیُنِنَا وَ وَحْیِنَا فَاِذَا جَآءَ اَمْرُنَا وَ فَارَ التَّنُّوْرُ١ۙ فَاسْلُكْ فِیْهَا مِنْ كُلٍّ زَوْجَیْنِ اثْنَیْنِ وَ اَهْلَكَ اِلَّا مَنْ سَبَقَ عَلَیْهِ الْقَوْلُ مِنْهُمْ١ۚ وَ لَا تُخَاطِبْنِیْ فِی الَّذِیْنَ ظَلَمُوْا١ۚ اِنَّهُمْ مُّغْرَقُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>27</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاِذَا اسْتَوَیْتَ اَنْتَ وَ مَنْ مَّعَكَ عَلَى الْفُلْكِ فَقُلِ الْحَمْدُ لِلّٰهِ الَّذِیْ نَجّٰىنَا مِنَ الْقَوْمِ الظّٰلِمِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>28</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ قُلْ رَّبِّ اَنْزِلْنِیْ مُنْزَلًا مُّبٰرَكًا وَّ اَنْتَ خَیْرُ الْمُنْزِلِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>29</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنَّ فِیْ ذٰلِكَ لَاٰیٰتٍ وَّ اِنْ كُنَّا لَمُبْتَلِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>30</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اَنْشَاْنَا مِنْۢ بَعْدِهِمْ قَرْنًا اٰخَرِیْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>31</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاَرْسَلْنَا فِیْهِمْ رَسُوْلًا مِّنْهُمْ اَنِ اعْبُدُوا اللّٰهَ مَا لَكُمْ مِّنْ اِلٰهٍ غَیْرُهٗ١ؕ اَفَلَا تَتَّقُوْنَ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>32ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   وَ قَالَ الْمَلَاُ مِنْ قَوْمِهِ الَّذِیْنَ كَفَرُوْا وَ كَذَّبُوْا بِلِقَآءِ الْاٰخِرَةِ وَ اَتْرَفْنٰهُمْ فِی الْحَیٰوةِ الدُّنْیَا١ۙ مَا هٰذَاۤ اِلَّا بَشَرٌ مِّثْلُكُمْ١ۙ یَاْكُلُ مِمَّا تَاْكُلُوْنَ مِنْهُ وَ یَشْرَبُ مِمَّا تَشْرَبُوْنَ۪ۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>33</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَئِنْ اَطَعْتُمْ بَشَرًا مِّثْلَكُمْ اِنَّكُمْ اِذًا لَّخٰسِرُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>34</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَیَعِدُكُمْ اَنَّكُمْ اِذَا مِتُّمْ وَ كُنْتُمْ تُرَابًا وَّ عِظَامًا اَنَّكُمْ مُّخْرَجُوْنَ۪ۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>35</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    هَیْهَاتَ هَیْهَاتَ لِمَا تُوْعَدُوْنَ۪ۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>36</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنْ هِیَ اِلَّا حَیَاتُنَا الدُّنْیَا نَمُوْتُ وَ نَحْیَا وَ مَا نَحْنُ بِمَبْعُوْثِیْنَ۪ۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>37</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنْ هُوَ اِلَّا رَجُلُ اِ۟فْتَرٰى عَلَى اللّٰهِ كَذِبًا وَّ مَا نَحْنُ لَهٗ بِمُؤْمِنِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>38</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالَ رَبِّ انْصُرْنِیْ بِمَا كَذَّبُوْنِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>39</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالَ عَمَّا قَلِیْلٍ لَّیُصْبِحُنَّ نٰدِمِیْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>40</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاَخَذَتْهُمُ الصَّیْحَةُ بِالْحَقِّ فَجَعَلْنٰهُمْ غُثَآءً١ۚ فَبُعْدًا لِّلْقَوْمِ الظّٰلِمِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>41</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اَنْشَاْنَا مِنْۢ بَعْدِهِمْ قُرُوْنًا اٰخَرِیْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>42</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    مَا تَسْبِقُ مِنْ اُمَّةٍ اَجَلَهَا وَ مَا یَسْتَاْخِرُوْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>43</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اَرْسَلْنَا رُسُلَنَا تَتْرَا١ؕ كُلَّمَا جَآءَ اُمَّةً رَّسُوْلُهَا كَذَّبُوْهُ فَاَتْبَعْنَا بَعْضَهُمْ بَعْضًا وَّ جَعَلْنٰهُمْ اَحَادِیْثَ١ۚ فَبُعْدًا لِّقَوْمٍ لَّا یُؤْمِنُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>44</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    ثُمَّ اَرْسَلْنَا مُوْسٰى وَ اَخَاهُ هٰرُوْنَ١ۙ۬ بِاٰیٰتِنَا وَ سُلْطٰنٍ مُّبِیْنٍۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>45</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِلٰى فِرْعَوْنَ وَ مَلَاۡئِهٖ فَاسْتَكْبَرُوْا وَ كَانُوْا قَوْمًا عَالِیْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>46</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَقَالُوْۤا اَنُؤْمِنُ لِبَشَرَیْنِ مِثْلِنَا وَ قَوْمُهُمَا لَنَا عٰبِدُوْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>47</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَكَذَّبُوْهُمَا فَكَانُوْا مِنَ الْمُهْلَكِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>48</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَقَدْ اٰتَیْنَا مُوْسَى الْكِتٰبَ لَعَلَّهُمْ یَهْتَدُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>49</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ جَعَلْنَا ابْنَ مَرْیَمَ وَ اُمَّهٗۤ اٰیَةً وَّ اٰوَیْنٰهُمَاۤ اِلٰى رَبْوَةٍ ذَاتِ قَرَارٍ وَّ مَعِیْنٍ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>50ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   یٰۤاَیُّهَا الرُّسُلُ كُلُوْا مِنَ الطَّیِّبٰتِ وَ اعْمَلُوْا صَالِحًا١ؕ اِنِّیْ بِمَا تَعْمَلُوْنَ عَلِیْمٌؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>51</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اِنَّ هٰذِهٖۤ اُمَّتُكُمْ اُمَّةً وَّاحِدَةً وَّ اَنَا رَبُّكُمْ فَاتَّقُوْنِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>52</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَتَقَطَّعُوْۤا اَمْرَهُمْ بَیْنَهُمْ زُبُرًا١ؕ كُلُّ حِزْبٍۭ بِمَا لَدَیْهِمْ فَرِحُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>53</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَذَرْهُمْ فِیْ غَمْرَتِهِمْ حَتّٰى حِیْنٍ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>54</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَیَحْسَبُوْنَ اَنَّمَا نُمِدُّهُمْ بِهٖ مِنْ مَّالٍ وَّ بَنِیْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>55</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    نُسَارِعُ لَهُمْ فِی الْخَیْرٰتِ١ؕ بَلْ لَّا یَشْعُرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>56</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنَّ الَّذِیْنَ هُمْ مِّنْ خَشْیَةِ رَبِّهِمْ مُّشْفِقُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>57</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ بِاٰیٰتِ رَبِّهِمْ یُؤْمِنُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>58</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ هُمْ بِرَبِّهِمْ لَا یُشْرِكُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>59</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ الَّذِیْنَ یُؤْتُوْنَ مَاۤ اٰتَوْا وَّ قُلُوْبُهُمْ وَجِلَةٌ اَنَّهُمْ اِلٰى رَبِّهِمْ رٰجِعُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>60</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اُولٰٓئِكَ یُسٰرِعُوْنَ فِی الْخَیْرٰتِ وَ هُمْ لَهَا سٰبِقُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>61</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَا نُكَلِّفُ نَفْسًا اِلَّا وُسْعَهَا وَ لَدَیْنَا كِتٰبٌ یَّنْطِقُ بِالْحَقِّ وَ هُمْ لَا یُظْلَمُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>62</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    بَلْ قُلُوْبُهُمْ فِیْ غَمْرَةٍ مِّنْ هٰذَا وَ لَهُمْ اَعْمَالٌ مِّنْ دُوْنِ ذٰلِكَ هُمْ لَهَا عٰمِلُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>63</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    حَتّٰۤى اِذَاۤ اَخَذْنَا مُتْرَفِیْهِمْ بِالْعَذَابِ اِذَا هُمْ یَجْئَرُوْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>64</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    لَا تَجْئَرُوا الْیَوْمَ١۫ اِنَّكُمْ مِّنَّا لَا تُنْصَرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>65</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَدْ كَانَتْ اٰیٰتِیْ تُتْلٰى عَلَیْكُمْ فَكُنْتُمْ عَلٰۤى اَعْقَابِكُمْ تَنْكِصُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>66</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    مُسْتَكْبِرِیْنَ١ۖۗ بِهٖ سٰمِرًا تَهْجُرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>67</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَفَلَمْ یَدَّبَّرُوا الْقَوْلَ اَمْ جَآءَهُمْ مَّا لَمْ یَاْتِ اٰبَآءَهُمُ الْاَوَّلِیْنَ٘   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>68</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَمْ لَمْ یَعْرِفُوْا رَسُوْلَهُمْ فَهُمْ لَهٗ مُنْكِرُوْنَ٘   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>69</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَمْ یَقُوْلُوْنَ بِهٖ جِنَّةٌ١ؕ بَلْ جَآءَهُمْ بِالْحَقِّ وَ اَكْثَرُهُمْ لِلْحَقِّ كٰرِهُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>70</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَوِ اتَّبَعَ الْحَقُّ اَهْوَآءَهُمْ لَفَسَدَتِ السَّمٰوٰتُ وَ الْاَرْضُ وَ مَنْ فِیْهِنَّ١ؕ بَلْ اَتَیْنٰهُمْ بِذِكْرِهِمْ فَهُمْ عَنْ ذِكْرِهِمْ مُّعْرِضُوْنَؕ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>71</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَمْ تَسْئَلُهُمْ خَرْجًا فَخَرَاجُ رَبِّكَ خَیْرٌ١ۖۗ وَّ هُوَ خَیْرُ الرّٰزِقِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>72</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اِنَّكَ لَتَدْعُوْهُمْ اِلٰى صِرَاطٍ مُّسْتَقِیْمٍ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>73</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اِنَّ الَّذِیْنَ لَا یُؤْمِنُوْنَ بِالْاٰخِرَةِ عَنِ الصِّرَاطِ لَنٰكِبُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>74</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَوْ رَحِمْنٰهُمْ وَ كَشَفْنَا مَا بِهِمْ مِّنْ ضُرٍّ لَّلَجُّوْا فِیْ طُغْیَانِهِمْ یَعْمَهُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>75</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ لَقَدْ اَخَذْنٰهُمْ بِالْعَذَابِ فَمَا اسْتَكَانُوْا لِرَبِّهِمْ وَ مَا یَتَضَرَّعُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>76</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    حَتّٰۤى اِذَا فَتَحْنَا عَلَیْهِمْ بَابًا ذَا عَذَابٍ شَدِیْدٍ اِذَا هُمْ فِیْهِ مُبْلِسُوْنَ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>77ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   وَ هُوَ الَّذِیْۤ اَنْشَاَ لَكُمُ السَّمْعَ وَ الْاَبْصَارَ وَ الْاَفْئِدَةَ١ؕ قَلِیْلًا مَّا تَشْكُرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>78</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ هُوَ الَّذِیْ ذَرَاَكُمْ فِی الْاَرْضِ وَ اِلَیْهِ تُحْشَرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>79</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ هُوَ الَّذِیْ یُحْیٖ وَ یُمِیْتُ وَ لَهُ اخْتِلَافُ الَّیْلِ وَ النَّهَارِ١ؕ اَفَلَا تَعْقِلُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>80</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    بَلْ قَالُوْا مِثْلَ مَا قَالَ الْاَوَّلُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>81</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالُوْۤا ءَاِذَا مِتْنَا وَ كُنَّا تُرَابًا وَّ عِظَامًا ءَاِنَّا لَمَبْعُوْثُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>82</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    لَقَدْ وُعِدْنَا نَحْنُ وَ اٰبَآؤُنَا هٰذَا مِنْ قَبْلُ اِنْ هٰذَاۤ اِلَّاۤ اَسَاطِیْرُ الْاَوَّلِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>83</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قُلْ لِّمَنِ الْاَرْضُ وَ مَنْ فِیْهَاۤ اِنْ كُنْتُمْ تَعْلَمُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>84</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    سَیَقُوْلُوْنَ لِلّٰهِ١ؕ قُلْ اَفَلَا تَذَكَّرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>85</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قُلْ مَنْ رَّبُّ السَّمٰوٰتِ السَّبْعِ وَ رَبُّ الْعَرْشِ الْعَظِیْمِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>86</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    سَیَقُوْلُوْنَ لِلّٰهِ١ؕ قُلْ اَفَلَا تَتَّقُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>87</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قُلْ مَنْۢ بِیَدِهٖ مَلَكُوْتُ كُلِّ شَیْءٍ وَّ هُوَ یُجِیْرُ وَ لَا یُجَارُ عَلَیْهِ اِنْ كُنْتُمْ تَعْلَمُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>88</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    سَیَقُوْلُوْنَ لِلّٰهِ١ؕ قُلْ فَاَنّٰى تُسْحَرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>89</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    بَلْ اَتَیْنٰهُمْ بِالْحَقِّ وَ اِنَّهُمْ لَكٰذِبُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>90</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    مَا اتَّخَذَ اللّٰهُ مِنْ وَّلَدٍ وَّ مَا كَانَ مَعَهٗ مِنْ اِلٰهٍ اِذًا لَّذَهَبَ كُلُّ اِلٰهٍۭ بِمَا خَلَقَ وَ لَعَلَا بَعْضُهُمْ عَلٰى بَعْضٍ١ؕ سُبْحٰنَ اللّٰهِ عَمَّا یَصِفُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>91</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    عٰلِمِ الْغَیْبِ وَ الشَّهَادَةِ فَتَعٰلٰى عَمَّا یُشْرِكُوْنَ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>92ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   قُلْ رَّبِّ اِمَّا تُرِیَنِّیْ مَا یُوْعَدُوْنَۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>93</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    رَبِّ فَلَا تَجْعَلْنِیْ فِی الْقَوْمِ الظّٰلِمِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>94</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اِنَّا عَلٰۤى اَنْ نُّرِیَكَ مَا نَعِدُهُمْ لَقٰدِرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>95</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِدْفَعْ بِالَّتِیْ هِیَ اَحْسَنُ السَّیِّئَةَ١ؕ نَحْنُ اَعْلَمُ بِمَا یَصِفُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>96</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ قُلْ رَّبِّ اَعُوْذُ بِكَ مِنْ هَمَزٰتِ الشَّیٰطِیْنِۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>97</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ اَعُوْذُ بِكَ رَبِّ اَنْ یَّحْضُرُوْنِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>98</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    حَتّٰۤى اِذَا جَآءَ اَحَدَهُمُ الْمَوْتُ قَالَ رَبِّ ارْجِعُوْنِۙ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>99</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    لَعَلِّیْۤ اَعْمَلُ صَالِحًا فِیْمَا تَرَكْتُ كَلَّا١ؕ اِنَّهَا كَلِمَةٌ هُوَ قَآئِلُهَا١ؕ وَ مِنْ وَّرَآئِهِمْ بَرْزَخٌ اِلٰى یَوْمِ یُبْعَثُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>100</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاِذَا نُفِخَ فِی الصُّوْرِ فَلَاۤ اَنْسَابَ بَیْنَهُمْ یَوْمَئِذٍ وَّ لَا یَتَسَآءَلُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>101</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَمَنْ ثَقُلَتْ مَوَازِیْنُهٗ فَاُولٰٓئِكَ هُمُ الْمُفْلِحُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>102</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ مَنْ خَفَّتْ مَوَازِیْنُهٗ فَاُولٰٓئِكَ الَّذِیْنَ خَسِرُوْۤا اَنْفُسَهُمْ فِیْ جَهَنَّمَ خٰلِدُوْنَۚ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>103</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    تَلْفَحُ وُجُوْهَهُمُ النَّارُ وَ هُمْ فِیْهَا كٰلِحُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>104</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَلَمْ تَكُنْ اٰیٰتِیْ تُتْلٰى عَلَیْكُمْ فَكُنْتُمْ بِهَا تُكَذِّبُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>105</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالُوْا رَبَّنَا غَلَبَتْ عَلَیْنَا شِقْوَتُنَا وَ كُنَّا قَوْمًا ضَآلِّیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>106</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    رَبَّنَاۤ اَخْرِجْنَا مِنْهَا فَاِنْ عُدْنَا فَاِنَّا ظٰلِمُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>107</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالَ اخْسَئُوْا فِیْهَا وَ لَا تُكَلِّمُوْنِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>108</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنَّهٗ كَانَ فَرِیْقٌ مِّنْ عِبَادِیْ یَقُوْلُوْنَ رَبَّنَاۤ اٰمَنَّا فَاغْفِرْ لَنَا وَ ارْحَمْنَا وَ اَنْتَ خَیْرُ الرّٰحِمِیْنَۚۖ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>109</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَاتَّخَذْتُمُوْهُمْ سِخْرِیًّا حَتّٰۤى اَنْسَوْكُمْ ذِكْرِیْ وَ كُنْتُمْ مِّنْهُمْ تَضْحَكُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>110</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اِنِّیْ جَزَیْتُهُمُ الْیَوْمَ بِمَا صَبَرُوْۤا١ۙ اَنَّهُمْ هُمُ الْفَآئِزُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>111</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قٰلَ كَمْ لَبِثْتُمْ فِی الْاَرْضِ عَدَدَ سِنِیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>112</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قَالُوْا لَبِثْنَا یَوْمًا اَوْ بَعْضَ یَوْمٍ فَسْئَلِ الْعَآدِّیْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>113</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    قٰلَ اِنْ لَّبِثْتُمْ اِلَّا قَلِیْلًا لَّوْ اَنَّكُمْ كُنْتُمْ تَعْلَمُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>114</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    اَفَحَسِبْتُمْ اَنَّمَا خَلَقْنٰكُمْ عَبَثًا وَّ اَنَّكُمْ اِلَیْنَا لَا تُرْجَعُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>115</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    فَتَعٰلَى اللّٰهُ الْمَلِكُ الْحَقُّ١ۚ لَاۤ اِلٰهَ اِلَّا هُوَ١ۚ رَبُّ الْعَرْشِ الْكَرِیْمِ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>116</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ مَنْ یَّدْعُ مَعَ اللّٰهِ اِلٰهًا اٰخَرَ١ۙ لَا بُرْهَانَ لَهٗ بِهٖ١ۙ فَاِنَّمَا حِسَابُهٗ عِنْدَ رَبِّهٖ١ؕ اِنَّهٗ لَا یُفْلِحُ الْكٰفِرُوْنَ   
+                    <small>
+                        <small>
+                            ﴿
+                            <b>
+                                <small>117</small>
+                            </b>
+                            ﴾
+                        </small>
+                    </small>
+                    وَ قُلْ رَّبِّ اغْفِرْ وَ ارْحَمْ وَ اَنْتَ خَیْرُ الرّٰحِمِیْنَ۠ &nbsp;&nbsp;ۧ  ۧ   
+                    <small>
+                        ﴿<small>118ع</small>
+                    </small>
+                    <small>
+                        <small>المؤمنون 23</small>
+                    </small>
+                    ﴾   
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+   <div class="floating-buttons">
+        <button id="decrease-speed"><i class="fas fa-minus"></i></button>
+        <button id="auto-scroll"><i class="fas fa-play"></i> AUTO SCROLL</button>
+        <button id="increase-speed"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="popup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>We are continuously working on this feature. It will start working very soon.</p>
+        </div>
+    </div>
+
+    <script>
+        let scrollSpeed = 0;
+        let scrollInterval;
+        const scrollContent = document.getElementById('scroll-content');
+        const autoScrollButton = document.getElementById('auto-scroll');
+        const decreaseSpeedButton = document.getElementById('decrease-speed');
+        const increaseSpeedButton = document.getElementById('increase-speed');
+        const backButton = document.getElementById('back-button');
+        const playButton = document.getElementById('play-button');
+        const popup = document.getElementById('popup');
+        const backToTopButton = document.getElementById('back-to-top');
+
+        function startScrolling() {
+            if (scrollInterval) clearInterval(scrollInterval);
+            scrollInterval = setInterval(() => {
+                scrollContent.scrollBy(0, scrollSpeed);
+            }, 100);
+        }
+
+        autoScrollButton.addEventListener('click', () => {
+            if (scrollSpeed === 0) {
+                scrollSpeed = 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            } else {
+                scrollSpeed = 0;
+                autoScrollButton.innerHTML = `<i class="fas fa-play"></i> AUTO SCROLL`;
+                clearInterval(scrollInterval);
+            }
+        });
+
+        decreaseSpeedButton.addEventListener('click', () => {
+            if (scrollSpeed > -5) {
+                scrollSpeed -= 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            }
+        });
+
+        increaseSpeedButton.addEventListener('click', () => {
+            if (scrollSpeed < 5) {
+                scrollSpeed += 1;
+                autoScrollButton.innerHTML = `<i class="fas fa-pause"></i> SCROLLING (${scrollSpeed}x)`;
+                startScrolling();
+            }
+        });
+
+        backButton.addEventListener('click', () => {
+            window.history.back(); // Navigate to the previous page
+        });
+
+        playButton.addEventListener('click', () => {
+            popup.style.display = 'block'; // Show the popup
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            scrollContent.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        function closePopup() {
+            popup.style.display = 'none'; // Close the popup
+        }
+
+        window.onclick = function (event) {
+            if (event.target === popup) {
+                closePopup();
+            }
+        };
+    </script>
+</body>
+</html>
